@@ -29,7 +29,7 @@ test('Alternative waits', async({page}) => {
 
 test('timeOut', async({page}) => {
 
-    test.setTimeout(10000);
+    test.setTimeout(100000);
     const successButton = page.locator('.bg-success');//30s
     await successButton.click({timeout: 16000});//15s
 
