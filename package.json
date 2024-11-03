@@ -3,12 +3,17 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "firstTest.spec.ts"
+    "ng": "ng",
+    "Start": "ng serve",
+    "pageObjects-chrome": "npx playwright test userPageObject.spec.ts --project=chromium",
+    "pageObject-Firefox": "npx playwright test userPageObject.spec.ts --project=firefox",
+    "pageBject-all": "npm run pageObject-chrome && npm run pageObject-firefox"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@faker-js/faker": "^9.1.0",
     "@playwright/test": "^1.48.2",
     "@types/node": "^22.8.1"
   },
